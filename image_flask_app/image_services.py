@@ -20,7 +20,7 @@ def get_intensity_of_image():
     gray = cv2.cvtColor(color, cv2.COLOR_BGR2GRAY)
 
     color_intensities = cv2.mean(color)
-    response = jsonify({'average_intensity': cv2.mean(gray), 
+    response = jsonify({'average_intensity': cv2.mean(gray)[0], 
                         'average_intensity_blue': color_intensities[0],
                         'average_intensity_green': color_intensities[1],
                         'average_intensity_red': color_intensities[2]})
