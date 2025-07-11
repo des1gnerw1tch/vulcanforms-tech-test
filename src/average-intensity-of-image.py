@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 @app.route("/images/intensity", methods=['POST'])
 def get_intensity_of_image():
-    print(request.files)
     file = request.files.get('image')
 
     if (file is None):
