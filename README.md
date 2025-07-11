@@ -24,3 +24,5 @@ I included 3 tests for basic coverage. It would be a good idea to add more tests
 * Test 3: Make sure that correct average intensities are returned when send POST request with valid jpg image.
 
 I used OpenCV for image processing, so it can handle multiple different image file formats. In the unit tests I use jpg. 
+
+Another note: I spent more time than the suggested 45–60 minutes on this techincal test because I wanted to make sure everything was cleanly structured, tested, containerized, and ready to go. I was also having a fun time during this coding challenge and enjoyed tinkering with this setup!
