@@ -1,4 +1,6 @@
 FROM python:3.12
+RUN apt-get update && apt-get install -y libgl1 # For OpenCV need this system library
+
 WORKDIR /app
 COPY src ./src
 RUN pip install --no-cache-dir -r ./src/requirements.txt
